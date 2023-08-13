@@ -1,27 +1,19 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```py
+📦public                # Only contain vite.svg, do not care about this folder.
+┣ 📜vite.svg
+📦src
+ ┣ 📂assets             # All assets such as jpg, svg, icon ... goes here.
+ ┣ 📜App.tsx            # App component.
+ ┣ 📜index.css          # CSS element for global elements.
+ ┣ 📜main.tsx           # Program entry.
+ ┣ 📜vite-env.d.ts      # Define the types for environment-related values.
+┣ .gitignore
+┣ index.html
+┣ package.json
+┣ README.md
+┣ tsconfig.json         # TypeScript configuration file for project.
+┣ tsconfig.node.json    # TypeScript configuration file specifically tailored for Node.js
+┣ vite.config.ts        # Configuration file specific to Vite.js
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
