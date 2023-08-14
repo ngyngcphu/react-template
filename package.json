@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint '**/*.{tsx,ts,js}'",
-    "format": "prettier '**/*.{tsx,ts,js,json,md,yml,yaml}' --write"
+    "format": "prettier '**/*.{tsx,ts,js,json,md,yml,yaml}' --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
