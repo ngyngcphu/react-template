@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  tickflow-mockserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tickflow-mockserver:latest
+    ports:
+      - 3002:3002
+    container_name: tickflow-mockserver
+    volumes:
+      - ./:/tickflow-mockserver
+      - /tickflow-mockserver/node_modules
