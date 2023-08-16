@@ -1,7 +1,7 @@
 import { projectGeneralService } from '../services/projectGeneral';
 import { create } from 'zustand';
 
-export const useUserStore = create<ProjectGeneralStore>()((set, get) => ({
+export const useProjectGeneralStore = create<ProjectGeneralStore>()((set, get) => ({
   projectGeneralStatus: 'UNINIT',
   projectGeneralData: [],
   projectSelectedById: {
