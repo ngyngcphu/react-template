@@ -1,11 +1,9 @@
 import { NavigateFunction, useNavigate, useLocation } from 'react-router-dom';
 import moment from 'moment';
 import { Card, CardBody, Chip, Spinner, Typography } from '@material-tailwind/react';
-import { ScreenSize } from '../constants/screen';
-import { PROJECT_HEADER } from '../constants/project';
-import { useScreenSize } from '../hooks/useScreenSize';
-import { useProjectGeneralStore } from '../states/projectGeneral';
-import { useNavigationBarStore } from '../states/navigationBar';
+import { ScreenSize, PROJECT_HEADER } from '@constants';
+import { useScreenSize } from '@hooks';
+import { useProjectGeneralStore, useNavigationBarStore } from '@states';
 
 export const ProjectGeneralPage: Component<{ projectSummary: ProjectGeneralData[] }> = ({
   projectSummary

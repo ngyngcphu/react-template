@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
+    "start": "yarn barrels && cross-env NODE_ENV=development vite --host",
+    "build": "tsc && cross-env NODE_ENV=production vite build",
+    "preview": "vite preview --host",
+    "barrels": "barrelsby --config .barrelsby.json -q",
     "lint": "eslint '**/*.{tsx,ts,js}'",
     "format": "prettier '**/*.{tsx,ts,js,json,md,yml,yaml}' --write",
     "prepare": "husky install"
@@ -33,6 +34,8 @@
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.14",
+    "barrelsby": "^2.8.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",

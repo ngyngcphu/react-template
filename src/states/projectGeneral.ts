@@ -1,5 +1,5 @@
-import { projectGeneralService } from '../services/projectGeneral';
 import { create } from 'zustand';
+import { projectGeneralService } from '@services';
 
 export const useProjectGeneralStore = create<ProjectGeneralStore>()((set, get) => ({
   projectGeneralStatus: 'UNINIT',

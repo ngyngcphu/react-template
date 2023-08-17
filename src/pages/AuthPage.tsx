@@ -1,10 +1,9 @@
-import { authService } from '../services/auth';
-import { useUserStore } from '../states/user';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
-
 import { Card, Input, Button, Typography } from '@material-tailwind/react';
 import { EnvelopeIcon, KeyIcon } from '@heroicons/react/24/outline';
+import { authService } from '@services';
+import { useUserStore } from '@states';
 
 export function AuthPage() {
   const { register, handleSubmit } = useForm<LoginFormData>();
@@ -58,7 +57,7 @@ export function AuthPage() {
           />
         </div>
 
-        <Button className='mt-6' fullWidth type='submit'>
+        <Button className='mt-6 bg-blue-500' fullWidth type='submit'>
           Login
         </Button>
       </form>

@@ -1,5 +1,5 @@
-import loginImage from '../assets/login.svg';
-import { ILayout } from '../interfaces/layout';
+import loginImage from '@assets/login.svg';
+import { ILayout } from '@interfaces';
 
 export const AuthLayout: ILayout = function ({ children }) {
   return (

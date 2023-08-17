@@ -1,5 +1,5 @@
-import { ScreenSize } from '../constants/screen';
 import { useEffect, useMemo, useState } from 'react';
+import { ScreenSize } from '@constants';
 
 const getWidth = () =>
   window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
